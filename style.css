@@ -1,0 +1,58 @@
+* {
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#draggable-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 5rem;
+}
+
+#sortable {
+    height: max-content;
+    width: 70%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#sortable > div {
+    height: max-content;
+    padding: 1rem 1.5rem;
+    min-width: 2rem;
+    max-width: 2rem;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    cursor: move;
+    user-select: none;
+    transition: transform 0.2s ease;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+
+#sortable > div:hover, #sortable > div:focus {
+    outline: 3px solid #000000;  /* Agregar un borde verde para mejorar la accesibilidad */
+}
+
+#sortable > div.dragging {
+    opacity: 0.5;
+}
+
+#sortable > div[aria-grabbed="true"] {
+    background-color: #dcdcdc;  /* Cambia el fondo mientras se está arrastrando */
+}
