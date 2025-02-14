@@ -4,19 +4,25 @@
 
 body {
     text-align: center;
-    height: auto;
-    background: url(https://cdn.pixabay.com/photo/2016/12/30/19/33/children-1941336_1280.png), linear-gradient(to bottom, #f4f4e0, #f1f198);
+    background: url(https://cdn.pixabay.com/photo/2016/12/30/19/33/children-1941336_1280.png), linear-gradient(to bottom, #f4f4e0, #eef9b0);
     background-size: cover;
 }
 
+#title-container{
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    background-color: #f4f4e0e0;
+    justify-content: center;
+
+}
 
 
 #title {
-    text-align: center;
+    width: fit-content;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.2rem;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-    background: rgb(244, 244, 224,0.9);
 }
 
 .color1 { 
@@ -83,7 +89,7 @@ body {
 .draggableB, .draggableH, .draggableN, .draggableT, .draggableZ { 
     background-color: #FFBD33; 
 } 
-.draggableC, .draggableI, .draggableO, .draggableU { 
+.draggableC, .draggableI, .draggableO, .draggableU, .draggableÑ { 
     background-color: #22d943; 
 } 
 .draggableD, .draggableJ, .draggableP, .draggableV { 

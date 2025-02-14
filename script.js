@@ -90,7 +90,7 @@ function handleTouchEnd(e) {
 // Retroalimentación de sonido
 function handleClick() {
   const letter = this.textContent.trim().toLowerCase();
-  audio.src = `audio/${letter}.mp3`; // Archivo de audio asociado
+  audio.src = `audio/${letter} audio.wav`; // Archivo de audio asociado
   audio.play();
 }
 
@@ -133,3 +133,10 @@ document.head.insertAdjacentHTML('beforeend', `
     }
   </style>
 `);
+
+
+document.addEventListener("click", () => {
+  const bgMusic = document.getElementById("bg-music");
+  bgMusic.volume = 0.1;
+  bgMusic.play();
+}, { once: true });
