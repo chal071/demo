@@ -1,13 +1,33 @@
 * {
-    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
+
+body {
+    text-align: center;
+    height: auto;
+    background: url(https://cdn.pixabay.com/photo/2016/12/30/19/33/children-1941336_1280.png), linear-gradient(to bottom, #f4f4e0, #f1f198);
+    background-size: cover;
+}
+
+
 
 #title {
     text-align: center;
-    font-size: 2rem;
     font-weight: bold;
-    color: #333;
+    font-size: 3rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    background: rgb(244, 244, 224,0.9);
 }
+
+.color1 { 
+    color: #FF5733; 
+}
+.color2 { 
+    color: #FFD700;
+ }
+.color3 { 
+    color: #337BFF;
+ }
 
 #draggable-container {
     height: 100vh;
@@ -32,17 +52,17 @@
 
 #sortable > div {
     height: max-content;
-    padding: 1rem 1.5rem;
-    min-width: 2rem;
-    max-width: 2rem;
-    background-color: #f0f0f0;
+    padding: 1rem 1.3rem;
+    min-width: 2.3rem;
+    max-width: 2.3rem;
     border: 2px solid #ccc;
     cursor: move;
     user-select: none;
     transition: transform 0.2s ease;
     font-weight: bold;
     text-align: center;
-    color: #000;
+    color: #ffff;
+    border-radius: 30px;
 }
 
 #sortable > div:hover, #sortable > div:focus {
@@ -55,4 +75,29 @@
 
 #sortable > div[aria-grabbed="true"] {
     background-color: #dcdcdc;  /* Cambia el fondo mientras se está arrastrando */
+}
+
+.draggableA, .draggableG, .draggableM, .draggableS, .draggableY { 
+    background-color: #FF5733;
+ } 
+.draggableB, .draggableH, .draggableN, .draggableT, .draggableZ { 
+    background-color: #FFBD33; 
+} 
+.draggableC, .draggableI, .draggableO, .draggableU { 
+    background-color: #22d943; 
+} 
+.draggableD, .draggableJ, .draggableP, .draggableV { 
+    background-color: #337BFF; 
+} 
+.draggableE, .draggableK, .draggableQ, .draggableW { 
+    background-color: #8D33FF; 
+} 
+.draggableF, .draggableL, .draggableR, .draggableX { 
+    background-color: #FF33A8; 
+}
+
+
+#sortable > div:hover {
+    transform: scale(1.2);
+    box-shadow: 4px 4px 15px rgb(0, 0, 0.2);
 }
